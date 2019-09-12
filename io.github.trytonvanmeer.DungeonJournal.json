@@ -52,7 +52,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tryton-vanmeer/DungeonJournal",
-                    "commit": "23ce52753ef1a251440ecaf8ea944944511a0ba7"
+                    "commit": "ce86c4e6edbf36ef9a5a64c6a2df3508c46d1db0"
                 }
             ]
         }
