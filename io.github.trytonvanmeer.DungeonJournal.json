@@ -1,13 +1,13 @@
 {
     "app-id": "io.github.trytonvanmeer.DungeonJournal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "dungeonjournal",
     "finish-args": [
         "--share=network",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--metadata=X-DConf=migrate-path=/io/github/trytonvanmeer/DungeonJournal/"
     ],
@@ -36,9 +36,9 @@
             ],
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://source.puri.sm/Librem5/libhandy",
-                    "commit" : "2d777677352d037b6f5cc24d9c1c8d9a74ac0ded"
+                    "type" : "archive",
+                    "url" : "https://gitlab.gnome.org/GNOME/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz",
+                    "sha256" : "138bec94e66d15a7a19350b65845d4529bcd969ea913ab3eb438f56fe47d5d37"
                 }
             ]
         },
@@ -49,6 +49,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/tryton-vanmeer/DungeonJournal",
+                    "tag": "v0.6.0",
                     "commit": "ce86c4e6edbf36ef9a5a64c6a2df3508c46d1db0"
                 }
             ]
