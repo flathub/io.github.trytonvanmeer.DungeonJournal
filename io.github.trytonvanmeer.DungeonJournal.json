@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.trytonvanmeer.DungeonJournal",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "dungeonjournal",
     "finish-args": [
@@ -51,6 +51,10 @@
                     "url": "https://github.com/tryton-vanmeer/DungeonJournal",
                     "tag": "v0.6.0",
                     "commit": "ce86c4e6edbf36ef9a5a64c6a2df3508c46d1db0"
+                },
+                {
+                    "type": "patch",
+                    "path": "dj-meson.patch"
                 }
             ]
         }
