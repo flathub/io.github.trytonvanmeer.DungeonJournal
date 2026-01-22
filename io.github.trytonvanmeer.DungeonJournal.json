@@ -5,6 +5,7 @@
     "sdk": "org.gnome.Sdk",
     "command": "dungeonjournal",
     "finish-args": [
+        "--device=dri",
         "--share=network",
         "--share=ipc",
         "--socket=fallback-x11",
@@ -25,36 +26,14 @@
     ],
     "modules": [
         {
-            "name" : "libhandy",
-            "buildsystem" : "meson",
-            "config-opts" : [
-                "-Dglade_catalog=disabled",
-                "-Dintrospection=enabled",
-                "-Dexamples=false",
-                "-Dtests=false"
-
-            ],
-            "sources" : [
-                {
-                    "type" : "archive",
-                    "url" : "https://gitlab.gnome.org/GNOME/libhandy/-/archive/v0.0.13/libhandy-v0.0.13.tar.gz",
-                    "sha256" : "138bec94e66d15a7a19350b65845d4529bcd969ea913ab3eb438f56fe47d5d37"
-                }
-            ]
-        },
-        {
             "name": "dungeonjournal",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/tryton-vanmeer/DungeonJournal",
-                    "tag": "v0.6.0",
-                    "commit": "ce86c4e6edbf36ef9a5a64c6a2df3508c46d1db0"
-                },
-                {
-                    "type": "patch",
-                    "path": "dj-meson.patch"
+                    "tag": "v0.7.0",
+                    "commit": "b6e7ad3955c92897c0c9ac354e542b348323de13"
                 }
             ]
         }
