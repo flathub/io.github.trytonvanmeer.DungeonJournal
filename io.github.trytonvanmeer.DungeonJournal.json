@@ -12,18 +12,6 @@
         "--socket=wayland",
         "--metadata=X-DConf=migrate-path=/io/github/trytonvanmeer/DungeonJournal/"
     ],
-    "cleanup": [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "/share/vala",
-        "*.la",
-        "*.a"
-    ],
     "modules": [
         {
             "name": "dungeonjournal",
